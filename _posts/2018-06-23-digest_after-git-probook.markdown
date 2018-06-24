@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "git-snippets"
+title:  "git-commands"
 date:   2018-06-22 22:22:01 +0500
 categories: jekyll update
 ---
 
 Заметки по командам git после прочтения книги "Git для профессионального программиста".
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Начнём с самых простых:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+* `git add -p` - добавлять все изменения в индекс
+* `git log --oneline` - удобная запись лога коммитов
