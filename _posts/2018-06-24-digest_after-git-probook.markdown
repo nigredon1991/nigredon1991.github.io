@@ -14,6 +14,8 @@ categories: jekyll update
 * `git mv <file>` - перемещение
 * `git log`
     * `--oneline` - удобная запись лога коммитов
+	* `git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s"` - один из вариантов записи
+	* ` git config --global alias.work 'log --pretty=format:"%h%x09%an%x09%ad%x09%s"'` - настройка для вывода
     * `-S <str>` - поиск по добавленному коду
     * `--pretty=format:"%h - %an, %ar : %s` - формат вывода
     * `--graph` - граф деления веток
