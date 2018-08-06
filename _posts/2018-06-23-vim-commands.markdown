@@ -93,6 +93,11 @@ categories: jekyll update
 * `gv` - снова выделить тоже самое
 * `wW` - вперёд на слово
 * `a[wsp]` - всё слово, предложение, абзац
+# plugin vim-surround
+* `cs"'` - изменить кавычки с `"` на `'`
+* `ysiw[']` - заключить слово в кавычки
+* `ds[']` - удалить кавычки
+* `[VisualM]S[']` - заключить в кавычки выделенное
 
 ## Поиск
 * `/?` - поиск вперёд, назад
@@ -172,7 +177,7 @@ categories: jekyll update
 Keyboard command  |  Action
  ---------------- | -----------------
 `Ctrl-]`        | Jump to the tag underneath the cursor
-CTRL-t        | Jump back
+`CTRL-t`        | Jump back
 `:ts <tag> <RET>`| Search for a particular tag
 `:tn`            | Go to the next definition for the last tag
 `:tp`            | Go to the previous definition for the last tag
