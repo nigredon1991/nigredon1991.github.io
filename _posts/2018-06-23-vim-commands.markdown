@@ -219,6 +219,17 @@ Keyboard command  |  Action
 * `:set foldlevel=0` - показать только строки с нулевым отступом, остальные свернуть
 * `z[rm]` - увеличить, уменьшить foldlevel
 
+## FZF
+
+{alphanum} Refine the query
+* `<C-j>` Select previous item from matchlist
+* `<C-k>` Select next item from matchlist
+* `<CR>` Open the selected file in the current window
+* `<C-x>` Open the selected file in a horizontal split
+* `<C-v>` Open the selected file in a vertical split
+* `<C-t>` Open the selected file in a new tab page
+* `<C-c>` Dismiss the fzf picker
+
 ## Метки(никогда не пользовался)
 * `ma` - метка `a`
 контекст - последнее изменение
