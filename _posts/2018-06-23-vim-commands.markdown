@@ -220,7 +220,6 @@ Keyboard command  |  Action
 * `z[rm]` - увеличить, уменьшить foldlevel
 
 ## FZF
-
 {alphanum} Refine the query
 * `<C-j>` Select previous item from matchlist
 * `<C-k>` Select next item from matchlist
@@ -229,6 +228,12 @@ Keyboard command  |  Action
 * `<C-v>` Open the selected file in a vertical split
 * `<C-t>` Open the selected file in a new tab page
 * `<C-c>` Dismiss the fzf picker
+
+## Terminal mode
+
+`:terminal`
+`<C-\><C-n>`
+
 
 ## Метки(никогда не пользовался)
 * `ma` - метка `a`
