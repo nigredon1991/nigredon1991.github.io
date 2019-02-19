@@ -233,6 +233,7 @@ Keyboard command  |  Action
 
 `:terminal`
 `<C-\><C-n>`
+tnoremap <Esc> <C-\><C-n>
 
 
 ## Метки(никогда не пользовался)
