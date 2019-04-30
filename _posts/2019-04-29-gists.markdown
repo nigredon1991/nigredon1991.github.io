@@ -10,5 +10,20 @@ categories: jekyll update
 
 ### Сканирование Wi-Fi
 
-
 `nmcli dev wifi list` - посмотреть Wi-Fi сети
+
+
+### Настройка для nvidia-xrun
+
+# ~/.config/openbox/autostart - смена языка по Caps Lock
+
+```
+setxkbmap -layout us,ru -option '' -option 'grp:caps_toggle,grp_led:caps'
+/usr/bin/xfce4-terminal
+```
+
+# .nvidia-xinitrc
+
+```
+openbox
+```
