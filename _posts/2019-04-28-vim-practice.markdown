@@ -18,8 +18,15 @@ categories: jekyll update
 потом `i`(без пробелов вокруг) или `a` (с пробелами), а в конце команда передвижения
 
 `daw` -  удалить слово
-`cis`
-
+`vi"` - выделить то, что в `"`
+`vit` - выделить tag block
+`w` - word
+`s` - sentence(предложение)
+`p` - paragraph
+Выделить блок текста ограниченный чем-то (i-внутри скобок, a-вместе со скобками)
+`{B}(b)[]<>t''...` - разные блоки внутри скобок, кавычек
+{123}
+(123)
 
 # Operators (:help operator)
 
@@ -38,3 +45,21 @@ categories: jekyll update
 |<|	<	shift left
 |zf|	zf	define a fold
 |g@|	g@	call function set with the 'operatorfunc' option
+
+# Вставка в Insert Mode
+
+`Esc` or `Ctrl-[` - выйти из Insert mode
+`Cntrl-r0` - вставка из 0 регистра (стандартный) 
+`Cntrl-r=6*20<CR>` - вставка значения выражения 6*20
+`Cntrl-v<code>` - вставка unicode символа(065,u00bf)
+`Cntrl-k{char1}{char2}` - вставка unicode символа из диграфа (`:help digraph-table`)
+В Normal mode `ga` на символе даёт код символа
+`ث ` -  <ﺙ> 1579, Hex 062b, Oct 3053, Digr tk
+
+# Visual mode gists
+
+`Esc` or `Ctrl-[` - выйти из Visual mode(такой же, как Insert)
+`gv` - повторить последнее выделение
+Также во время выделения работают операторы.
+`Vr-` - заменить все символы в строке на `-`
+`o` - переход курсора наверх выделения, либо вниз выделения
