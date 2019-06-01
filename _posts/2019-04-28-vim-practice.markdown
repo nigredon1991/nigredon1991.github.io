@@ -99,3 +99,18 @@ categories: jekyll update
 `o` - переход курсора наверх выделения, либо вниз выделения
 
 `:’<,’>s//bar/g` - заменить все вхождения последнего поиска на `bar` в выделенной области
+
+# Vimscript
+
+Пока примеры функций, которые хочется использовать в своих скриптах
+```
+function! test_write_tab()
+    let full_cur_line = getline(line('.'))
+    let target_pattern  = '\(.*\)[^(]*\(.*\)'
+    let target_line_num = search(target_pattern)
+    finded = split(matchstr(getline(line('.')), '(.*)[^(]*(.*)'), '==')
+    execute(':tabprevious')
+    setbufline(1,line('.'), '123'.'132')
+    append(line('.'), ['123:', '\n'.'132'])
+    execute(':tabprevious')
+```
