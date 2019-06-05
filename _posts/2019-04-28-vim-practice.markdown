@@ -74,7 +74,7 @@ categories: jekyll update
 
 `Esc` or `Ctrl-[` - выйти из Insert mode
 
-`Cntrl-r0` - вставка из 0 регистра (стандартный) 
+`Cntrl-r0` - вставка из 0 регистра (стандартный)
 
 `Cntrl-r=6*20<CR>` - вставка значения выражения 6*20
 
@@ -114,3 +114,8 @@ function! test_write_tab()
     append(line('.'), ['123:', '\n'.'132'])
     execute(':tabprevious')
 ```
+
+# Slow Vim
+
+`:syntime on` - включить сбор статистики по скорости работы
+`:syntime report` - показать собранную статистику
