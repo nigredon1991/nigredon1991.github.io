@@ -30,8 +30,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-cloudshtoken: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYjRmODU2MjMtMDY4Ny00NzkxLTg3NjctNjBiMjM1Njc2MDllIiwiaW5kZXhfaWQiOiIwNmQwZTljMy05MTgzLTQ1NjctYWY2Yi0wODc2ODkyYmVhNWMiLCJpbmRleF91cmwiOiJodHRwczovL25pZ3JlZG9uMTk5MS5naXRodWIuaW8ifQ.D8b02gZe2MozgjLT1Ec9KxSITISLp5ODRvXSgjbS9u8"
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
