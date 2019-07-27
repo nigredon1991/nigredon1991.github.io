@@ -70,7 +70,9 @@ categories: jekyll update
 
 |g@|	g@	call function set with the 'operatorfunc' option
 
-# Вставка в Insert Mode
+# Insert Mode
+
+## Вставка
 
 `Esc` or `Ctrl-[` - выйти из Insert mode
 
@@ -86,6 +88,11 @@ categories: jekyll update
 
 `ث ` -  <ﺙ> 1579, Hex 062b, Oct 3053, Digr tk
 
+## Особенности
+
+`Cntrl-w` - удалить слово
+`Cntrl-u` - удалить до начала строки
+
 # Visual mode gists
 
 `Esc` or `Ctrl-[` - выйти из Visual mode(такой же, как Insert)
@@ -99,6 +106,13 @@ categories: jekyll update
 `o` - переход курсора наверх выделения, либо вниз выделения
 
 `:’<,’>s//bar/g` - заменить все вхождения последнего поиска на `bar` в выделенной области
+
+# Ex-commands
+
+`%normal A;` - вызвать normal -команду для каждой строки
+
+# Auto-marks
+
 
 # Vimscript
 
