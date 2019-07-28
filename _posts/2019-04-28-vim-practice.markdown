@@ -39,35 +39,20 @@ categories: jekyll update
 
 # Operators (:help operator)
 
-|c|	c	change
-
-|d|	d	delete
-
-|y|	y	yank into register (does not change the text)
-
-|~|	~	swap case (only if 'tildeop' is set)
-
+|c|		change
+|d|		delete
+|y|		yank into register (does not change the text)
+|~|		swap case (only if 'tildeop' is set)
 |g~|	g~	swap case
-
 |gu|	gu	make lowercase
-
 |gU|	gU	make uppercase
-
-|!|	!	filter through an external program
-
-|=|	=	filter through 'equalprg' or C-indenting if empty
-
-
+|!|	    filter through an external program
+|=|		filter through 'equalprg' or C-indenting if empty
 |gq|	gq	text formatting
-
 |g?|	g?	ROT13 encoding
-
-|>|	>	shift right
-
-|<|	<	shift left
-
+|>|		shift right
+|<|		shift left
 |zf|	zf	define a fold
-
 |g@|	g@	call function set with the 'operatorfunc' option
 
 # Insert Mode
@@ -109,7 +94,49 @@ categories: jekyll update
 
 # Ex-commands
 
-`%normal A;` - вызвать normal -команду для каждой строки
+`Cntrl-w Cntrl-w` -  вставить в командную строку слово под курсором
+
+`Cntrl-w Cntrl-a` - вставить в командную строку WORD под курсором
+
+`q:` - история команд, которую можно редактировать и запускать из неё
+
+`%normal A;` - вызвать normal-команду для каждой строки
+
+Для справки:
+| Command | Effect
+|:[range]delete [x] |Delete specified lines [into register x]
+|:[range]yank [x] |Yank specified lines [into register x]
+|:[line]put [x] |Put the text from register x after the specified line
+|:[range]copy {address}|  Copy the specified lines to below the line specified by {address}
+|:[range]move {address}|  Move the specified lines to below the line specified by {address}
+|:[range]join | Join the specified lines
+|:[range]normal {commands} | Execute Normal mode {commands} on each specified line
+|:[range]substitute/{pattern}/{string}/[flags]| Replace occurrences of {pattern} with {string} on each specified line
+|:[range]global/{pattern}/[cmd] | Execute the Ex command [cmd] on all specified lines where the {pattern} matches
+
+
+# Windows
+
+`<C-w>s` or `:sp[lit] {file}` - разделить окно горизонтально
+`<C-w>v` or `:vsp[lit] {file}` - разделить окно вертикально
+`<C-w>w` - ходить по окнам циклически
+`<C-w>[hjkl]` -  перейти на окно в зависимости от положения
+`<C-w>с` or `:cl[ose]` - закрыть текущее окно
+`<C-w>o` or `:on[ly]`- закрыть все окна кроме текущего
+`<C-w>=` - сравнять размеры всех окон
+`<C-w>_` - максимизировать текущее окно снизу вверх
+`<C-w>|` - максимизировать текущее окно слева направо
+`[N]<C-w>_` - сделать текущее окно равным N строк
+`[N]<C-w>|` - сделать текущее окно равным N колонок
+
+## Tabs(вкладки)
+`tabe[edit] {filename}` - открыть файл во вкладке
+`<C-w>T` - переместить текущее окно в свою новую вкладку
+`tabc[lose]` - закрыть вкладку
+`tabo[nlye]` - закрыть вкладки кроме текущей
+`[N]gt` - переместится на N владку
+`[N]gt` - переместится на следующую владку
+`[N]gt` - переместится на предыдущую владку
 
 # Auto-marks
 
