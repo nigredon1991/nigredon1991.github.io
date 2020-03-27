@@ -170,3 +170,14 @@ function! test_write_tab()
 
 `:syntime on` - включить сбор статистики по скорости работы
 `:syntime report` - показать собранную статистику
+
+# Vim session
+
+Create:
+
+`:mks[!] ~/.vim/sessions/<file>`
+`:source ~/.vim/sessions/article.vim`
+
+Open:
+
+`:source ~/.vim/sessions/article.vim`
