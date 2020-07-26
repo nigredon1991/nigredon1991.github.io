@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "bash-setuid"
+date:   2020-07-19 21:09:22 +0500
+categories: jekyll update
+---
+
+# Проблемы с pipefail в bash
+
+Решил попробовать писать скрипты с pipefail, но с ними возникают проблемы, когда используешь команду head
+
+Предыдущему потоку в pipe посылается сигнал SIGPIPE, поэтому он падает.
+
+Для того, чтобы этого избежать, можно поставить:
+
+1. ( .. || true ) - не очень мне понравилось, потому что скрипты становятся менее читаемыми
+2. Добавить обработку сигнала
+```
+nothing() {
+	return 0
+}
+# trap nothing PIPE
+```
+
+Это нравится больше, но надо ещё потестить
+
+
+``` bash
+#!/bin/bash
+
+set -eux
+set -o pipefail
+
+nothing() {
+	return 0
+}
+# trap nothing PIPE
+# trap nothing PIPE
+
+# seq 1 10000 | head -1
+# echo hi | tee >(cat)
+
+# (
+# 	echo hello
+# 	sleep 1
+# 	echo world
+# ) | tee >(echo yo)
+
+# echo hi | tee >(cat)
+# ( cat /dev/urandom || true) | head -c 10
+cat /dev/urandom | head -c 10
+
+echo "${PIPESTATUS[@]}"
+```
