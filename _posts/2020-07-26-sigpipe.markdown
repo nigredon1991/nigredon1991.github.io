@@ -11,45 +11,23 @@ categories: jekyll update
 
 Предыдущему потоку в pipe посылается сигнал SIGPIPE, поэтому он падает.
 
-Для того, чтобы этого избежать, можно поставить:
+Для того, чтобы этого избежать помогло следующее
 
-1. ( .. || true ) - не очень мне понравилось, потому что скрипты становятся менее читаемыми
-2. Добавить обработку сигнала
 ```
-nothing() {
-	return 0
-}
-# trap nothing PIPE
-```
-
-Это нравится больше, но надо ещё потестить
-
-
-``` bash
-#!/bin/bash
-
-set -eux
-set -o pipefail
-
-nothing() {
-	return 0
-}
-# trap nothing PIPE
-# trap nothing PIPE
-
-# seq 1 10000 | head -1
-# echo hi | tee >(cat)
-
-# (
-# 	echo hello
-# 	sleep 1
-# 	echo world
-# ) | tee >(echo yo)
-
-# echo hi | tee >(cat)
-# ( cat /dev/urandom || true) | head -c 10
-cat /dev/urandom | head -c 10
-
+echo (git show --pretty=format:%H || [ $? -eq 141 ] ) | head -n1)
 echo "${PIPESTATUS[@]}"
-# BASHOPTS work checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:globasciiranges:histappend:interactive_comments:progcomp:promptvars:sourcepath
+```
+
+То есть мы проверяем код возврата команды, которая может упасть с SIGPIPE и не падаем, если поймали нужный код
+
+
+Пробовал ещё другие варианты, но они не помогли:
+
+**НЕ ПОМОГЛО**
+
+```
+nothing() {
+	return 0
+}
+# trap nothing PIPE
 ```
