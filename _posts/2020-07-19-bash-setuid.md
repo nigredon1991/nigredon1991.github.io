@@ -57,4 +57,4 @@ $ ./usr/local/bin/echo_command_wrapper lolo
 lolo
 ```
 
-:public:
+<!-- :public: -->

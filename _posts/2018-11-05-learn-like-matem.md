@@ -79,4 +79,4 @@ categories: jekyll update
 Далее идут повторения
 
 
-:public:
+<!-- :public: -->

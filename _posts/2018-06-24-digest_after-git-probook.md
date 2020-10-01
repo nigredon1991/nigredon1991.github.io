@@ -59,4 +59,4 @@ categories: jekyll update
 * `git bisect [start,bad,good]` - двоичный поиск проблем по истории
 * `git submodule add ....` - субмодули
 
-:public:
+<!-- :public: -->
