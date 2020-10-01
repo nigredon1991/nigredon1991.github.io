@@ -58,5 +58,3 @@ categories: jekyll update
 * `git reset --soft HEAD~2` - перезапись последних двух коммитов в один
 * `git bisect [start,bad,good]` - двоичный поиск проблем по истории
 * `git submodule add ....` - субмодули
-
-:public:

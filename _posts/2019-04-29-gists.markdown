@@ -18,9 +18,6 @@ categories: jekyll update
 # ~/.config/openbox/autostart - смена языка по Caps Lock
 
 ```
-startx -- :1                                                             
-startx /usr/bin/startxfce4 -- :1
-setxkbmap -layout us,ru -option '' -option 'grp:caps_toggle,grp_led:caps'
 setxkbmap -layout us,ru -option '' -option 'grp:caps_toggle,grp_led:caps'
 /usr/bin/xfce4-terminal
 ```
@@ -30,5 +27,3 @@ setxkbmap -layout us,ru -option '' -option 'grp:caps_toggle,grp_led:caps'
 ```
 openbox
 ```
-
-:public:

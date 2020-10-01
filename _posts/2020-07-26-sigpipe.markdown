@@ -31,5 +31,3 @@ nothing() {
 }
 # trap nothing PIPE
 ```
-
-:public:
