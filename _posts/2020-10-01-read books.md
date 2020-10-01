@@ -25,6 +25,7 @@ categories: jekyll update
 Прочитано:
 
 
+<!--test [[file:~/reps/wiki/_posts/2019-04-29-gists.md]] -->
 
 <!-- :public: -->
 <!-- :books: -->
