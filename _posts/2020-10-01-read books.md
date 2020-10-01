@@ -26,6 +26,5 @@ categories: jekyll update
 
 
 
-:public:
-
-:books:
+<!-- :public: -->
+<!-- :books: -->
