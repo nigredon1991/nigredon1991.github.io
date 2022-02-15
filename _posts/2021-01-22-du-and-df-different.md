@@ -12,6 +12,9 @@ categories: jekyll update
 mount -o bind / /mnt/root/
 du -xh /mnt/root/ # -x - show this disk
 ```
+```
+du -sh /mnt/root/ # show summarize
+```
 
 
 <!-- :public: -->
