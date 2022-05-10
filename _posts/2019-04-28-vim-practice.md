@@ -99,8 +99,21 @@ categories: jekyll update
 cw<text>- заменить
 :%s//<C-r><C-w>/g - вставить последнюю замену с последнего поиска
 
-
-#TODO Расписать полезные регистры
+# Полезные регистры
+	
+1.  The unnamed register "" - все операции копирования, удаления
+2.  10 numbered registers "0 to "9 - те же самые операции, но в порядке последнем
+3.  The small delete register "- только первая строка копирования
+4.  26 named registers "a to "z or "A to "Z - в эти можно без проблем писать, что захочешь
+5.  Three read-only registers
+	": - last command
+	". - last inserted line
+	"%  - name of current file
+6.  Alternate buffer register "# - регистр для плагинов
+7.  The expression register "= - не разобрался
+8.  The selection registers "* and "+ - регистры для копирования из системы
+9.  The black hole register "_ - в него можно всё удалять и другие регистры не будут задействованы
+10. Last search pattern register "/
 
 # Ex-commands
 
