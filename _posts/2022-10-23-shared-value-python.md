@@ -12,7 +12,8 @@ categories: jekyll update
 
 Вот простенький пример программы:
 
-```python 1.py
+##### python 1.py
+```python
 #!/usr/bin/env python
 
 import argparse
