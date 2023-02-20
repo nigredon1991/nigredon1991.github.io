@@ -18,3 +18,5 @@ du -sh /mnt/root/ # show summarize
 
 
 <!-- :public: -->
+#linux 
+#command_line 

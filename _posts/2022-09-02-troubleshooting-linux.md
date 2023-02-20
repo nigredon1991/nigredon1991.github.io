@@ -134,3 +134,6 @@ categories: jekyll update
 ```
 
 <!-- :public: -->
+
+#linux
+#command_line

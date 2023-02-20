@@ -27,3 +27,7 @@ GUI-приложения с таким workflow не делал, но возмо
 #python
 
 <!-- :public: -->
+
+#pyinstaller
+#python 
+#windows 

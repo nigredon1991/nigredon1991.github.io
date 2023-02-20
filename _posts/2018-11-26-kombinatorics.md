@@ -121,3 +121,5 @@ $$\overline{C^k_n} = P(k,n-1) = { {(k+n-1)!}\over{k!(n-1)!} } = C^k_{n+k-1}$$
 $$D_n = P_n - C^1_n P_{n-1} + C^2_n P_{n-2} - ... + (-1)^nC^n_n = n! [1 - { {1}\over{1!} } + { {1}\over{2!} } - ... + { {(-1)^n}\over{n!} } ]$$
 
 <!-- :public: -->
+#matematics
+#combinatorics

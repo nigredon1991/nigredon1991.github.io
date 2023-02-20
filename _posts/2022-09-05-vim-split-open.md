@@ -16,3 +16,4 @@ vim -O file1.txt file2.text – Open both files in Vim, split vertically
 # https://vimtricks.com/p/open-vim-and-split-files/
 
 <!-- :public: -->
+#vim
