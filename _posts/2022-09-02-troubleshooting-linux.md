@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Troobleshooting linux"
+title: Troobleshooting linux
 date: 2022-09-02 14:22:00 +0500
 categories: jekyll update
 ---
